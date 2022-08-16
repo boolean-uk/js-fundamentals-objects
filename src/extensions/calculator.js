@@ -28,7 +28,7 @@ const exprOne = {
   b: {
     op: '*',
     a: 20,
-    b: 5 // TODO: Set 'undefined' to make this correct
+    b: undefined // TODO: Set 'undefined' to make this correct
   },
   expected: 100,
   expectedDepth: 3
@@ -41,7 +41,7 @@ const exprOne = {
 const exprTwo = {
   op: '*',
   a: 1,
-  b: { op: '*', a: 2, b: { op: '*', a: 3, b: { op: '*', a: 4, b: 5 } } }, // TODO: Set 'undefined' to an object of the required depth to make the answer correct
+  b: undefined, // TODO: Set 'undefined' to an object of the required depth to make the answer correct
   expected: 120,
   expectedDepth: 4
 }
@@ -50,24 +50,8 @@ const exprTwo = {
 
 const exprThree = {
   op: '-',
-  a: { op: '+', a: 1, b: { op: '*', a: 2, b: { op: '*', a: 4, b: 5 } } }, // TODO set this and the following 'undefined'
-  b: {
-    op: '*',
-    a: 1,
-    b: {
-      op: '*',
-      a: 2,
-      b: {
-        op: '*',
-        a: 4,
-        b: {
-          op: '+',
-          a: 2,
-          b: { op: '+', a: 3, b: { op: '-', a: 123, b: 123 } }
-        }
-      }
-    }
-  },
+  a: undefined, // TODO set this and the following 'undefined'
+  b: undefined,
   expected: 1,
   expectedDepth: 10,
   different: true

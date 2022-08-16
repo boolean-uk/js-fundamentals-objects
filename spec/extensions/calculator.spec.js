@@ -20,8 +20,6 @@ function calculate(expr) {
           return doIt(expr.a) / doIt(expr.b)
         case '*':
           return doIt(expr.a) * doIt(expr.b)
-        case '%':
-          return doIt(expr.a) % doIt(expr.b)
         default:
           return NaN
       }
