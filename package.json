@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npx jasmine spec/core.spec.js",
     "test-extension": "npx jasmine spec/extension.spec.js",
+    "test-extra-extensions": "npx jasmine --config=spec/support/extensions-jasmine.json",
     "prepare": "husky install"
   },
   "author": "",
