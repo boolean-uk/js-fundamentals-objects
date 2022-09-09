@@ -11,6 +11,7 @@ delete person.size
 person.age = 43
 
 // 4. Add an instruments property to the person, initialised as an empty array
+const instruments = {}
 
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
 
