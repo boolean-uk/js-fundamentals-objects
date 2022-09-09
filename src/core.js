@@ -5,7 +5,7 @@ const person = { age: 32, size: 'Small' }
 person.name = 'Matt'
 
 // 2. Remove the size property from the person
-
+delete person.size
 // 3. Increase the person's age by 11
 
 // 4. Add an instruments property to the person, initialised as an empty array
