@@ -9,6 +9,8 @@ person['name'] = 'Matt'
 delete person.size
 
 // 3. Increase the person's age by 11
+person['age'] = person.age + 11
+
 
 
 // 4. Add an instruments property to the person, initialised as an empty array
