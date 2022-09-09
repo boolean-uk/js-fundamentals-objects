@@ -46,6 +46,9 @@ const numberOfVoucherCodes = basket.voucherCodes.length
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
 const firstVoucherCode = basket.voucherCodes[0]
 
+// 5. Book category should be Programming
+book.category = 'Programming'
+
 // Do not edit this exported object
 module.exports = {
   name: name,
