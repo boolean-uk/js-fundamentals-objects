@@ -28,9 +28,18 @@ person.profession = 'Musician'
 
 // 9. Add a friends property to the person, which is an empty array
 person.friends = []
-console.log(person)
 
 // 10. Add two objects to the persons friends array with the following properties:
+ person.friends.friend1 = {
+  name: 'Chris',
+  age: 46
+ }
+ person.friends.friend2 = {
+  name: 'Dom',
+  age: 43
+ }
+ console.log(person.friends)
+ 
 // Friend one: name - Chris, age - 46
 // Friend two: name - Dom, age - 43
 
