@@ -18,6 +18,7 @@ const book = {
 book.category = 'Programming'
 book.dimensions = undefined
 book.pages = 464
+book.isbn.asin = undefined
 
 // const isbn13 = '978-0132350884'
 
