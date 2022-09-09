@@ -5,6 +5,8 @@ const person = { age: 32, size: 'Small' }
 person.name = 'Matt'
 
 // 2. Remove the size property from the person
+delete person.size
+console.log(person)
 
 // 3. Increase the person's age by 11
 
