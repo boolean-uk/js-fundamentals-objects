@@ -14,12 +14,11 @@ person.age = 43
 person.instruments = []
 
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
-person.instruments = ['Guitar','Piano','Vocals']
+person.instruments = ['Guitar', 'Piano', 'Vocals']
 
 // 6. Using an index on the instruments array, set the mainInstrument variable below
 // to the third instrument in the array
 const mainInstrument = person.instruments[2]
-
 
 // 7. Add a profession property to the person, which is an object
 person.profession = {}
@@ -33,17 +32,16 @@ person.friends = []
 // 10. Add two objects to the persons friends array with the following properties:
 // Friend one: name - Chris, age - 46
 // Friend two: name - Dom, age - 43
-person.friends = [{name : 'Chris', age :46},
-{name : 'Dom', age: 43}]
+// eslint-disable-next-line no-unused-expressions
+person.friends.push({ name: 'Chris', age: 46 }, { name: 'Dom', age: 43 })
 
 // 11. Using an index on the persons friends array, set the bestFriend variable below
 // to the name of the first friend in the array
-const bestFriend = person.friends[0]
+const bestFriend = person.friends[0].name
 
 // Don't change the code below this line
 module.exports = {
-    person,
-    mainInstrument,
-    bestFriend
+  person,
+  mainInstrument,
+  bestFriend
 }
-
