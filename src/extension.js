@@ -39,7 +39,7 @@ const basket = {
   ],
   voucherCodes: ['AA-AA-A', 'BB-BB-B']
 }
-
+basket.items[0].price = 2
 // 3. Set this variable to the length of the baskets voucher codes array - using the basket object
 const numberOfVoucherCodes = basket.voucherCodes.length
 
