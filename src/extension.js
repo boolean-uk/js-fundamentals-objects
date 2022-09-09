@@ -36,11 +36,6 @@ const basket = {
       name: 'Lemon',
       quantity: 2,
       price: 0.5
-    },
-    {
-      name: 'Oranges',
-      quantity: 4,
-      price: 0.75
     }
   ],
   voucherCodes: ['AA-AA-A', 'BB-BB-B']
@@ -62,3 +57,16 @@ module.exports = {
   numberOfVoucherCodes: numberOfVoucherCodes,
   firstVoucherCode: firstVoucherCode
 }
+
+// Adding oranges to the basket:
+basket.items.push(
+  {
+  name: 'Oranges',
+  quantity: 4,
+  price: 0.75
+  }
+)
+
+// Adding pages to book:
+book.pages = 464
+console.log(book)
