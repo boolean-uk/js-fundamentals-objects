@@ -69,4 +69,6 @@ basket.items.push(
 
 // Adding pages to book:
 book.pages = 464
-console.log(book)
+
+// Fixing book category to programming
+book.category = 'Programming'
