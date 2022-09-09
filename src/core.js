@@ -24,12 +24,15 @@ const mainInstrument = person.instruments[2]
 person.profession = {}
 
 // 8. Add a name property to the profession object with the value Musician
-person.profession = 'Musician'
+person.profession = { name: 'Musician' }
 
 // 9. Add a friends property to the person, which is an empty array
 person.friends = []
 
 // 10. Add two objects to the persons friends array with the following properties:
+// Friend one: name - Chris, age - 46
+// Friend two: name - Dom, age - 43
+
 person.friends.friend1 = {
   name: 'Chris',
   age: 46
@@ -39,9 +42,6 @@ person.friends.friend2 = {
   name: 'Dom',
   age: 43
 }
-
-// Friend one: name - Chris, age - 46
-// Friend two: name - Dom, age - 43
 
 // 11. Using an index on the persons friends array, set the bestFriend variable below
 // to the name of the first friend in the array
