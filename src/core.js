@@ -11,14 +11,14 @@ delete person.size
 person.age += 11
 
 // 4. Add an instruments property to the person, initialised as an empty array
-person.instrument = []
+person.instruments = []
 
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
-person.instrument = ['Guitar', 'Piano', 'Vocals']
+person.instruments = ['Guitar', 'Piano', 'Vocals']
 
 // 6. Using an index on the instruments array, set the mainInstrument variable below
 // to the third instrument in the array
-const mainInstrument = person.instrument[2]
+const mainInstrument = person.instruments[2]
 
 // 7. Add a profession property to the person, which is an object
 person.profession = {}
