@@ -11,9 +11,11 @@ delete person.size
 person.age = 43
 
 // 4. Add an instruments property to the person, initialised as an empty array
-const instruments = {}
+person.instruments = []
 
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
+person.instruments.push('Guitar', 'Piano', 'Vocals')
+console.log(person)
 
 // 6. Using an index on the instruments array, set the mainInstrument variable below
 // to the third instrument in the array
