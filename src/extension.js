@@ -15,7 +15,7 @@ const book = {
   dimensions: '10x12x2'
 }
 
-const isbn13 = '978-0132350884'
+// const isbn13 = '978-0132350884'
 
 // 1. Set this to the book name - using the book object
 const name = ''
