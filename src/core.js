@@ -28,6 +28,7 @@ person['profession'] = {}
 person.profession.name = 'Musician'
 
 // 9. Add a friends property to the person, which is an empty array
+person['friends'] = []
 
 
 // 10. Add two objects to the persons friends array with the following properties:
