@@ -81,3 +81,6 @@ book.isbn.isbn13 = isbn13
 
 //Delete book dimensions:
 delete book.dimensions
+
+// Setting book ASIN to undefined:
+book.isbn.asin = undefined
