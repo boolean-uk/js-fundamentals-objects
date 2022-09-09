@@ -14,7 +14,7 @@ person.age = 43
 person.instruments = []
 console.log(person)
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
-person.instruments.push ('Guitar','Piano','Vocals')
+person.instruments.push('Guitar', 'Piano', 'Vocals')
 console.log(person.instruments)
 // 6. Using an index on the instruments array, set the mainInstrument variable below
 // to the third instrument in the array
@@ -29,13 +29,13 @@ person.friends = []
 // 10. Add two objects to the persons friends array with the following properties:
 // Friend one: name - Chris, age - 46
 // Friend two: name - Dom, age - 43
-const friendOne = {name: 'Chris', age: 46 };
-const friendTwo = {name: 'Dom' , age: 43};
+const friendOne = { name: 'Chris', age: 46 }
+const friendTwo = { name: 'Dom', age: 43 }
 person.friends.push(friendOne, friendTwo)
 console.log(person.friends)
 // 11. Using an index on the persons friends array, set the bestFriend variable below
 // to the name of the first friend in the array
-const bestFriend = person.friends[0].name 
+const bestFriend = person.friends[0].name
 
 // Don't change the code below this line
 module.exports = {
