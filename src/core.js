@@ -11,7 +11,7 @@ delete person.size
 person.age += 11
 
 // 4. Add an instruments property to the person, initialised as an empty array
-
+person.instrument = []
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
 
 // 6. Using an index on the instruments array, set the mainInstrument variable below

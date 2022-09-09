@@ -1,7 +1,7 @@
 const { person, mainInstrument, bestFriend } = require('../src/core.js')
 
 describe("Fundamental Objects", () => {
-    it("person", () => {
+    fit("person", () => {
         expect(person).toEqual({
             age: 43,
             name: 'Matt',
