@@ -75,3 +75,6 @@ book.category = 'Programming'
 
 // Amend the price of the Apples:
 basket.items[0].price = 2
+
+// Fixing book's ISBN 13 number:
+book.isbn.isbn13 = isbn13
