@@ -22,7 +22,7 @@ const mainInstrument = person.instruments[2]
 
 
 // 7. Add a profession property to the person, which is an object
-
+person['profession'] = {}
 
 // 8. Add a name property to the profession object with the value Musician
 
