@@ -14,7 +14,7 @@ person['age'] = person.age + 11
 person['instruments'] = []
 
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
-person['instruments'] = ['Guitar', 'Piano', 'vocals']
+person['instruments'] = ['Guitar', 'Piano', 'Vocals']
 
 // 6. Using an index on the instruments array, set the mainInstrument variable below
 // to the third instrument in the array
