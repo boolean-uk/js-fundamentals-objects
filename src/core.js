@@ -18,13 +18,13 @@ person.instrument = ['Guitar', 'Piano', 'Vocals']
 
 // 6. Using an index on the instruments array, set the mainInstrument variable below
 // to the third instrument in the array
-const mainInstrument = undefined
+const mainInstrument = person.instrument[2]
 
 // 7. Add a profession property to the person, which is an object
 
 // 8. Add a name property to the profession object with the value Musician
 
-// 9. Add a friends property to the person, which is an empty array
+// 9. Add a friends property to the person, which is an empty arrays
 
 // 10. Add two objects to the persons friends array with the following properties:
 // Friend one: name - Chris, age - 46
