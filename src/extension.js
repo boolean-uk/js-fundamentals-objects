@@ -72,3 +72,6 @@ book.pages = 464
 
 // Fixing book category to programming
 book.category = 'Programming'
+
+// Amend the price of the Apples:
+basket.items[0].price = 2
