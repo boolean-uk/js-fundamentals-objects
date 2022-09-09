@@ -34,12 +34,12 @@ person['friends'] = []
 // 10. Add two objects to the persons friends array with the following properties:
 // Friend one: name - Chris, age - 46
 // Friend two: name - Dom, age - 43
-person.friends['friendOne'] = {name: 'Chris', age: 46}
-person.friends['friendTwo'] = {name: 'Dom', age: 43}
+person.friends[0] = {name: 'Chris', age: 46}
+person.friends[1] = {name: 'Dom', age: 43}
 
 // 11. Using an index on the persons friends array, set the bestFriend variable below
 // to the name of the first friend in the array
-const bestFriend = undefined
+const bestFriend = person.friends[0].name
 
 
 // Don't change the code below this line
