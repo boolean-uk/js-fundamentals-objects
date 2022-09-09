@@ -30,22 +30,22 @@ person.profession = 'Musician'
 person.friends = []
 
 // 10. Add two objects to the persons friends array with the following properties:
- person.friends.friend1 = {
+person.friends.friend1 = {
   name: 'Chris',
   age: 46
- }
- person.friends.friend2 = {
+}
+
+person.friends.friend2 = {
   name: 'Dom',
   age: 43
- }
- console.log(person.friends)
- 
+}
+
 // Friend one: name - Chris, age - 46
 // Friend two: name - Dom, age - 43
 
 // 11. Using an index on the persons friends array, set the bestFriend variable below
 // to the name of the first friend in the array
-const bestFriend = undefined
+const bestFriend = person.friends.friend1.name
 
 // Don't change the code below this line
 module.exports = {
