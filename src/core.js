@@ -55,7 +55,7 @@ console.log('--------')
 // 10. Add two objects to the persons friends array with the following properties:
 // Friend one: name - Chris, age - 46
 // Friend two: name - Dom, age - 43
-person.friends.push({name: 'Chris', age: 46}, {name: 'Dom', age: 43})
+person.friends.push({ name: 'Chris', age: 46 }, { name: 'Dom', age: 43 })
 console.log('The Friends array should have 2 Objects inside now')
 console.log(person.friends)
 console.log('--------')

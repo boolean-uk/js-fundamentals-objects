@@ -77,7 +77,9 @@ console.log('--------')
 
 // Created and set isbn13 in the isbn object of book
 book.isbn.isbn13 = '978-0132350884'
-console.log(`Book should now have added isbn13 with the value of 978-0132350884`)
+console.log(
+  `Book should now have added isbn13 with the value of 978-0132350884`
+)
 console.log(book.isbn)
 console.log('--------')
 
@@ -87,13 +89,15 @@ console.log(`Book should now have a page value that is set to 464`)
 console.log(book)
 console.log('--------')
 
-// Added a new object for Oranges to the end of the basket.items array 
+// Added a new object for Oranges to the end of the basket.items array
 basket.items.push({
   name: 'Oranges',
   quantity: 4,
   price: 0.75
 })
-console.log(`The basket should have oranges added to its item array with name: oranges quantity: 4 and price: 0.75`)
+console.log(
+  `The basket should have oranges added to its item array with name: oranges quantity: 4 and price: 0.75`
+)
 console.log(basket.items[2])
 console.log('--------')
 
@@ -114,6 +118,3 @@ module.exports = {
   numberOfVoucherCodes: numberOfVoucherCodes,
   firstVoucherCode: firstVoucherCode
 }
-
-const test = basket.items.findIndex(basket.items.name === 'Apple')
-console.log(test)
