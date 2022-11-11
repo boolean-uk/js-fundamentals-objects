@@ -17,6 +17,11 @@ const book = {
 
 /* eslint-disable no-unused-vars */
 const isbn13 = '978-0132350884'
+book.isbn.isbn13 = isbn13
+book.pages = 464
+book.category = 'Programming'
+delete book.dimensions
+delete book.isbn.asin
 
 // 1. Set this to the book name - using the book object
 const name = book.name
