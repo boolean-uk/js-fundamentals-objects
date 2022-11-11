@@ -12,13 +12,16 @@ console.log(person)
 person.age = 32 + 11
 console.log(person)
 // 4. Add an instruments property to the person, initialised as an empty array
+person.instruments = []
+console.log(person)
 
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
-
+person.instruments = ['Guitar', 'Piano', 'Vocals']
+console.log(person.instruments)
 // 6. Using an index on the instruments array, set the mainInstrument variable below
 // to the third instrument in the array
-const mainInstrument = undefined
-
+const mainInstrument = person.instruments[2]
+console.log(mainInstrument)
 // 7. Add a profession property to the person, which is an object
 
 // 8. Add a name property to the profession object with the value Musician
