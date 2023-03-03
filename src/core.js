@@ -18,7 +18,7 @@ person.instruments = []
 console.log('q4', person)
 
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
-person.instruments = ['Guitar', 'Piano', 'Vocals']
+person.instruments.push('Guitar', 'Piano', 'Vocals')
 console.log('Q5', person.instruments)
 
 // 6. Using an index on the instruments array, set the mainInstrument variable below
