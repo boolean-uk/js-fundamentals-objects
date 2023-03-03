@@ -2,7 +2,7 @@
 const person = { age: 32, size: 'Small' }
 
 // 1. Give the person object a name property with the value Matt
-
+person['name'] = 'Matt'
 // 2. Remove the size property from the person
 
 // 3. Increase the person's age by 11
