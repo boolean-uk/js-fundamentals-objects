@@ -37,7 +37,7 @@ person.friends = [{name: 'Chris', age: 46}, {name: 'Dom', age: 43}]
 // 11. Using an index on the persons friends array, set the bestFriend variable below
 // to the name of the first friend in the array
 const bestFriend = person.friends[0].name
-console.log(bestFriend)
+
 // Don't change the code below this line
 module.exports = {
   person,
