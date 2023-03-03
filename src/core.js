@@ -23,15 +23,16 @@ console.log(person.instruments)
 
 // 6. Using an index on the instruments array, set the mainInstrument variable below
 // to the third instrument in the array
-const mainInstrument = [2];
+const mainInstrument[2];
 
 
 // 7. Add a profession property to the person, which is an object
-person.profession = [];
+person.profession[];
 
 
 // 8. Add a name property to the profession object with the value Musician
 person.profession.name = 'Musician';
+console.log(person.profession.names)
 
 // 9. Add a friends property to the person, which is an empty array
 person.friends = [];
