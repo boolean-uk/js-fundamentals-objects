@@ -18,11 +18,27 @@ const book = {
 /* eslint-disable no-unused-vars */
 const isbn13 = '978-0132350884'
 
+//isbn13 - deleting the asin number and book dimension.
+
+book.isbn.isbn13 = isbn13;
+delete book.isbn.asin
+delete book.dimensions
+
+
 // 1. Set this to the book name - using the book object
-const name = ''
+
+// set to book pages.
+const name = book.name
+console.log(book)
+book.pages = 464;
+console.log(book.pages)
+
 
 // 2. Set this to the isbn 10 value - using the book object
-const isbn10 = ''
+const isbn10 = book.isbn.isbn10
+
+// Changing the book category - because failed when ran code.
+book.category = "Programming";
 
 // Do not modify this basket object directly
 const basket = {
@@ -42,10 +58,23 @@ const basket = {
 }
 
 // 3. Set this variable to the length of the baskets voucher codes array - using the basket object
-const numberOfVoucherCodes = null
+const numberOfVoucherCodes = basket.voucherCodes.length;
 
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
-const firstVoucherCode = null
+const firstVoucherCode = basket.voucherCodes[0];
+
+// Selecting basket array, selecting item array, push to add object to the array.
+basket.items.push({ name: 'Oranges', price: 0.75, quantity: 4 });
+
+// Creating a variable called Apple, we are selecting the basket array, item section is within the basket array. 
+// We are using the find function to find the item name 'Apple'.
+// Using an if statment to see if apple exists.
+// Apple exists. Using apple.price to change the price.
+
+const apple = basket.items.find(item => item.name === 'Apple');
+if (apple){
+  apple.price = 2;
+}
 
 // Do not edit this exported object
 module.exports = {
@@ -56,3 +85,4 @@ module.exports = {
   numberOfVoucherCodes: numberOfVoucherCodes,
   firstVoucherCode: firstVoucherCode
 }
+
