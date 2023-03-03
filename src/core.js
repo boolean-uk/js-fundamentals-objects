@@ -8,7 +8,7 @@ person.name = 'Matt'
 delete person.size
 
 // 3. Increase the person's age by 11
-person.age += 11;
+person.age += 11
 console.log(person.age)
 
 // 4. Add an instruments property to the person, initialised as an empty array
@@ -35,8 +35,8 @@ person.friends = []
 // 10. Add two objects to the persons friends array with the following properties:
 // Friend one: name - Chris, age - 46
 // Friend two: name - Dom, age - 43
-person.friends[0] = {name: 'Chris', age: 46}
-person.friends[1] = {name: 'Dom', age: 43}
+person.friends[0] = { name: 'Chris', age: 46 }
+person.friends[1] = { name: 'Dom', age: 43 }
 console.log(person.friends[0], person.friends[1])
 
 // 11. Using an index on the persons friends array, set the bestFriend variable below
