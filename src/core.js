@@ -30,6 +30,8 @@ person.friends = []
 // Friend two: name - Dom, age - 43
 person.friends[0] = { name: 'Chris', age: 46 }
 person.friends[1] = { name: 'Dom', age: 43 }
+console.log(person.friends[0], person.friends[1])
+
 // 11. Using an index on the persons friends array, set the bestFriend variable below
 // to the name of the first friend in the array
 const bestFriend = person.friends[0].name
