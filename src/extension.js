@@ -49,10 +49,10 @@ const firstVoucherCode = null
 
 // Do not edit this exported object
 module.exports = {
-  name: name,
-  isbn10: isbn10,
-  book: book,
-  basket: basket,
-  numberOfVoucherCodes: numberOfVoucherCodes,
-  firstVoucherCode: firstVoucherCode
+  name,
+  isbn10,
+  book,
+  basket,
+  numberOfVoucherCodes,
+  firstVoucherCode
 }
