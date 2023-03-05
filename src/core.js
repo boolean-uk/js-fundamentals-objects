@@ -18,7 +18,7 @@ person.instruments = []
 console.log('Fourth exercise', person)
 
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
-person.instruments = ['Guitar, Piano, Vocals']
+person.instruments = ['Guitar', 'Piano', 'Vocals']
 console.log('Fifth exercise', person)
 
 // 6. Using an index on the instruments array, set the mainInstrument variable below
@@ -53,6 +53,7 @@ console.log('Tenth exercise', person)
 const bestFriend = person.friends[0].name
 console.log('Eleventh exercise', person)
 
+console.log(person.instruments)
 // Don't change the code below this line
 module.exports = {
   person,
