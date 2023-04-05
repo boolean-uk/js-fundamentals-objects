@@ -51,12 +51,33 @@ console.log(numberOfVoucherCodes)
 const firstVoucherCode = basket.voucherCodes[0]
 console.log(firstVoucherCode)
 
-// 5. apple price to 2
+// 5. Set apple price to 2
 basket.items[0].price = 2
 console.log(basket)
 
-// 6. oranges end of item list
+// 6. Add 4 oranges with price of 0.75 at end of items list of the basket
+basket.items.push( { name: 'Oranges', quantity: 4, price: 0.75} )
+console.log(basket)
 
+// 7. Change the property category of object book to Programming
+book.category = 'Programming'
+console.log(book.category);
+
+// 8. Set book pages to 464
+book.pages = 464
+console.log(book)
+
+// 9. Set Book ISBN 13 to 978-0132350884
+book.isbn.isbn13 = isbn13
+console.log(book)
+
+// 10. Remove the dimensions key property from the object book
+delete book.dimensions
+console.log(book)
+
+// 11. Remove the asin key property from the object book
+delete book.isbn.asin
+console.log(book)
 
 // Do not edit this exported object
 module.exports = {
