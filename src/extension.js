@@ -47,14 +47,27 @@ const numberOfVoucherCodes = basket.voucherCodes.length
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
 const firstVoucherCode = basket.voucherCodes[0]
 
-// test fixes
+// Test fixes
+// Added Oranges as instructed by errors
 basket.items.push({ name: 'Oranges', quantity: 4, price: 0.75 })
 
+// Changed Apple price
 basket.items[0].price = 2
 
+// Fixed category name
 book.category = 'Programming'
 
+// Book didn't need an asin
 delete book.isbn.asin
+
+// Book should have isbn13
+book.isbn.isbn13 = isbn13
+
+// Book should have 464 pages
+book.pages = 464
+
+// Book shouldn't have dimensions attribute
+delete book.dimensions
 
 // Do not edit this exported object
 module.exports = {
