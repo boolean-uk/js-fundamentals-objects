@@ -16,12 +16,6 @@ const book = {
 }
 
 /* eslint-disable no-unused-vars */
-const isbn13 = '978-0132350884'
-book.isbn.isbn13 = isbn13
-book.category = 'Programming'
-book.pages = 464
-delete book.isbn.asin
-delete book.dimensions
 
 // 1. Set this to the book name - using the book object
 const name = book.name
@@ -61,3 +55,12 @@ module.exports = {
   numberOfVoucherCodes,
   firstVoucherCode
 }
+
+basket.items[0].price = 2
+basket.items.push({ name: 'Oranges', price: 0.75, quantity: 4 })
+const isbn13 = '978-0132350884'
+book.isbn.isbn13 = isbn13
+book.category = 'Programming'
+book.pages = 464
+delete book.isbn.asin
+delete book.dimensions
