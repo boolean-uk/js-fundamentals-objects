@@ -96,8 +96,8 @@ delete book.isbn.asin
 //         at UserContext.<anonymous> (/home/runner/work/js-fundamentals-objects/js-fundamentals-objects/spec/extension.spec.js:41:38)
 //         at <Jasmine>
 
-book["ISBN 13"] = isbn13
-console.table(book)
+book.isbn.isbn13 = isbn13
+console.log(book)
 
 // 5) Extension: Book pages should be 464
 //   Message:
