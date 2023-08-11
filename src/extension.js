@@ -27,7 +27,7 @@ const isbn10 = book.isbn.isbn10
 delete book.dimensions
 delete book.isbn.asin
 book.category = 'Programming'
-book.isbn13 = '978-0132350884'
+book.isbn.isbn13 = '978-0132350884'
 book.pages = 464
 
 // Do not modify this basket object directly
