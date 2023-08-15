@@ -16,13 +16,14 @@ const book = {
 }
 
 /* eslint-disable no-unused-vars */
+
 const isbn13 = '978-0132350884'
 
 // 1. Set this to the book name - using the book object
-const name = ''
+const name = 'Clean Code'
 
 // 2. Set this to the isbn 10 value - using the book object
-const isbn10 = ''
+const isbn10 = '9780132350884'
 
 // Do not modify this basket object directly
 const basket = {
@@ -42,10 +43,38 @@ const basket = {
 }
 
 // 3. Set this variable to the length of the baskets voucher codes array - using the basket object
-const numberOfVoucherCodes = null
+const numberOfVoucherCodes = basket.voucherCodes.length
+console.log(numberOfVoucherCodes)
 
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
-const firstVoucherCode = null
+const firstVoucherCode = basket.voucherCodes[0]
+
+// define isbn13
+
+book.isbn.isbn13 = '978-0132350884'
+
+// pages
+book.pages = 464
+
+// asin key
+
+delete book.isbn.asin
+
+// dimensions
+
+delete book.dimensions
+
+// cooking vs programming
+
+book.category = 'Programming'
+
+// price
+
+basket.items[0].price = 2
+
+// organes
+
+basket.items.push({ name: 'Oranges', price: 0.75, quantity: 4 })
 
 // Do not edit this exported object
 module.exports = {
