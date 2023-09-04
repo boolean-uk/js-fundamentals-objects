@@ -27,6 +27,7 @@ console.log(book.isbn.isbn13)
 // ISBN 10 should be equal to the book's ISBN 10 number
 // const isbn10 = book.isbn.isbn10
 // console.log(isbn10)
+Object.assign(book.isbn, { isbn10: '9780132350884' })
 
 // 1. Set this to the book name - using the book object
 const name = book.name
