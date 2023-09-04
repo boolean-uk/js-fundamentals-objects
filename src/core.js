@@ -23,9 +23,10 @@ const mainInstrument = person.instrument[2]
 console.log('mainInstrument :>> ', mainInstrument);
 
 // 7. Add a profession property to the person, which is an object
+person.profession = {}
 
 // 8. Add a name property to the profession object with the value Musician
-
+person.profession.name = 'Musician'
 // 9. Add a friends property to the person, which is an empty array
 
 // 10. Add two objects to the persons friends array with the following properties:
