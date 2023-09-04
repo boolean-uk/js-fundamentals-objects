@@ -50,6 +50,12 @@ const firstVoucherCode = basket.voucherCodes[0]
 // further test
 delete book.dimensions
 
+book.isbn.isbn13 = isbn13
+
+book.category = 'Programming'
+
+basket.items.push({ name: 'Oranges', price: 0.75, quantity: 4 }),
+
 // Do not edit this exported object
 module.exports = {
   name,
