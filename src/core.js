@@ -25,7 +25,7 @@ console.log(person)
 // { age: 43, name: 'Matt', instruments: [] } - essentially an array within an object
 
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
-// Using the push method, push the instruments to the array 
+// Using the push method, push the instruments to the array
 person.instruments.push('Guitar', 'Piano', 'Vocals')
 console.log(person)
 // { age: 43, name: 'Matt', instruments: [ 'Guitar', 'Piano', 'Vocals' ] }
