@@ -9,8 +9,9 @@ delete person.size
 console.log('person :>> ', person);
 
 // 3. Increase the person's age by 11
-
+person.size =+ 11
 // 4. Add an instruments property to the person, initialised as an empty array
+person.instrument = []
 
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
 
