@@ -54,7 +54,12 @@ book.isbn.isbn13 = isbn13
 
 book.category = 'Programming'
 
-basket.items.push({ name: 'Oranges', price: 0.75, quantity: 4 }),
+basket.items.push({ name: 'Oranges', price: 0.75, quantity: 4 })
+
+delete book.isbn.asin
+
+book.pages = 464
+basket.items[0].price = 2
 
 // Do not edit this exported object
 module.exports = {
