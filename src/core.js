@@ -9,19 +9,15 @@ delete person.size
 // 3. Increase the person's age by 11
 person.age += 11
 
-
 // 4. Add an instruments property to the person, initialised as an empty array
 person.instruments = ['']
 
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
 person.instruments = ['Guitar', 'Piano', 'Vocals']
 
-
 // 6. Using an index on the instruments array, set the mainInstrument variable below
 // to the third instrument in the array
-const mainInstrument = person.instruments[2] 
-
-
+const mainInstrument = person.instruments[2]
 
 // 7. Add a profession property to the person, which is an object
 person.profession = {}
@@ -36,9 +32,8 @@ person.friends = []
 // Friend one: name - Chris, age - 46
 // Friend two: name - Dom, age - 43
 
-person.friends.push({name : 'Chris',age :46})
-person.friends.push({name : 'Dom',age :43})
-
+person.friends.push({ name: 'Chris', age: 46 })
+person.friends.push({ name: 'Dom', age: 43 })
 
 // 11. Using an index on the persons friends array, set the bestFriend variable below
 // to the name of the first friend in the array
