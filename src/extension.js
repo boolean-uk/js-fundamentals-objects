@@ -22,7 +22,7 @@ const isbn13 = '978-0132350884'
 const name = book.name
 
 // 2. Set this to the isbn 10 value - using the book object
-const isbn10 = ''
+const isbn10 = book.isbn.isbn10
 
 // Do not modify this basket object directly
 const basket = {
