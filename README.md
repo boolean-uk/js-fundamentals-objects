@@ -42,7 +42,7 @@ When you try to `git commit` any work you've staged using `git add`, there is an
 $ npx eslint src
 ```
 You will then need to resolve the errors before successfully committing your work. You can also do this automatically with this command - but try to understand what well-formatted code looks like so you don't simply rely on this magic fix!
-```
+```sh
 $ npx eslint src --fix
 ```
 
