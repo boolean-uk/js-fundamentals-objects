@@ -15,14 +15,34 @@ const book = {
   dimensions: '10x12x2'
 }
 
+// Expected '10x12x2' not to be defined.
+book.dimensions = undefined
+console.log(book.dimensions)
+
 /* eslint-disable no-unused-vars */
 const isbn13 = '978-0132350884'
+book.isbn = { isbn13 }
+console.log(book.isbn.isbn13)
+
+// ISBN 10 should be equal to the book's ISBN 10 number
+// const isbn10 = book.isbn.isbn10
+// console.log(isbn10)
 
 // 1. Set this to the book name - using the book object
-const name = ''
+const name = book.name
+console.log(name)
+
+// Expected 'Cooking' to equal 'Programming'.
+book.category = 'Programming'
+console.log(book.category)
+
+// Expected '0132350882' not to be defined.
+book.isbn.asin = undefined
+console.log(book.isbn.asin)
 
 // 2. Set this to the isbn 10 value - using the book object
-const isbn10 = ''
+const isbn10 = book.isbn.isbn10
+console.log(isbn10)
 
 // Do not modify this basket object directly
 const basket = {
@@ -41,11 +61,29 @@ const basket = {
   voucherCodes: ['AA-AA-A', 'BB-BB-B']
 }
 
+// 4 oranges priced at 0.75 should be added to the end of the items list'
+basket.items.push({
+  name: 'Oranges',
+  price: 0.75,
+  quantity: 4
+})
+console.log(basket.items[0])
+
+// Expected 1 to equal 2.
+basket.items[0].price = 2
+console.log(basket.items.price)
+
+// Extension: Book pages should be 464
+book.pages = 464
+console.log(book.pages)
+
 // 3. Set this variable to the length of the baskets voucher codes array - using the basket object
-const numberOfVoucherCodes = null
+const numberOfVoucherCodes = basket.voucherCodes.length
+console.log(numberOfVoucherCodes)
 
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
-const firstVoucherCode = null
+const firstVoucherCode = basket.voucherCodes[0]
+console.log(firstVoucherCode)
 
 // Do not edit this exported object
 module.exports = {
