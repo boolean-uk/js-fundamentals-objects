@@ -1,6 +1,6 @@
 const { person, mainInstrument, bestFriend } = require('../src/core.js')
 
-describe("Fundamental Objects", () => {
+describe('Fundamental Objects', () => {
     it("person", () => {
         expect(person).toEqual({
             age: 43,
