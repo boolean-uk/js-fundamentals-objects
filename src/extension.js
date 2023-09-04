@@ -16,9 +16,13 @@ const book = {
 }
 
 book.category = 'Programming'
+book.isbn.asin = undefined;
+book.dimensions = undefined;
+book.pages = 464
 
 /* eslint-disable no-unused-vars */
-const isbn13 = '978-0132350884'
+book.isbn.isbn13 = '978-0132350884'
+console.log(book);
 
 // 1. Set this to the book name - using the book object
 const name = book.name
@@ -46,6 +50,7 @@ const basket = {
   voucherCodes: ['AA-AA-A', 'BB-BB-B']
 }
 
+basket.items.push({name: 'Oranges', price: 0.75, quantity: 4})
 basket.items[0].price = 2
 console.log(basket);
 
