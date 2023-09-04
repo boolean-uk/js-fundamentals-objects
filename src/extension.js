@@ -47,6 +47,24 @@ const numberOfVoucherCodes = basket.voucherCodes.length()
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
 const firstVoucherCode = basket.voucherCodes[0]
 
+book.pages = 464
+
+basket.items.find((item) => item.name === 'Apple').price = 2
+
+book.category = 'Programming'
+
+basket.items.push({
+  name: 'Oranges',
+  price: 0.75,
+  quantity: 4
+})
+
+delete book.dimensions
+
+delete book.isbn.asin
+
+book.isbn.isbn13 = isbn13
+
 // Do not edit this exported object
 module.exports = {
   name,
