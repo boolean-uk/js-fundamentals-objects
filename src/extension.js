@@ -18,7 +18,7 @@ const book = {
 /* eslint-disable no-unused-vars */
 const isbn13 = '978-0132350884'
 book.isbn.isbn13 = isbn13
-
+book.category = "Programming"
 // 1. Set this to the book name - using the book object
 const name = book.name
 delete book.isbn.asin
@@ -48,7 +48,11 @@ const basket = {
 // 3. Set this variable to the length of the baskets voucher codes array - using the basket object
 const numberOfVoucherCodes = basket.voucherCodes.length
 basket.items[0].price = 2
-
+basket.items.push({
+  name: 'Oranges',
+  price: 0.75,
+  quantity: 4
+})
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
 const firstVoucherCode = basket.voucherCodes[0]
 
