@@ -16,7 +16,6 @@ const book = {
 }
 
 /* eslint-disable no-unused-vars */
-const isbn13 = '978-0132350884'
 
 // 1. Set this to the book name - using the book object
 const name = book.name
@@ -46,6 +45,29 @@ const numberOfVoucherCodes = basket.voucherCodes.length
 
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
 const firstVoucherCode = basket.voucherCodes[0]
+
+// 5. Set the price of Apple to 2
+basket.items[0].price = 2
+
+// 6. 4 oranges priced at 0.75 should be added to the end of the items list
+basket.items.push({
+  name: 'Oranges',
+  price: 0.75,
+  quantity: 4
+})
+
+// 7. Book category should be Programming
+book.category = 'Programming'
+console.log(book.category)
+// 8. Book pages should be 464
+book.pages = 464
+// 9. Book should not contain the dimensions key - it should be deleted
+delete book.dimensions
+// 10. Book should not contain the asin key - it should be deleted
+delete book.asin
+// 11. Book ISBN 13 should be 978-0132350884
+const isbn13 = '978-0132350884'
+book.isbn = { isbn13: '978-0132350884' }
 
 // Do not edit this exported object
 module.exports = {
