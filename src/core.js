@@ -14,10 +14,13 @@ person.size =+ 11
 person.instrument = []
 
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
+person.instrument.push('Guitar', 'Piano', 'Vocals')
+console.log('person.instrument :>> ', person.instrument);
 
 // 6. Using an index on the instruments array, set the mainInstrument variable below
 // to the third instrument in the array
-const mainInstrument = undefined
+const mainInstrument = person.instrument[2]
+console.log('mainInstrument :>> ', mainInstrument);
 
 // 7. Add a profession property to the person, which is an object
 
