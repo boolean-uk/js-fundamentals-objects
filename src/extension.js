@@ -25,9 +25,13 @@ book.isbn = { isbn13 }
 console.log(book.isbn.isbn13)
 
 // ISBN 10 should be equal to the book's ISBN 10 number
+const isbn10 = '9780132350884'
+// console.log(isbn10)
+// Object.assign(book.isbn, { isbn10: '9780132350884' })
+
+// 2. Set this to the isbn 10 value - using the book object
 // const isbn10 = book.isbn.isbn10
 // console.log(isbn10)
-Object.assign(book.isbn, { isbn10: '9780132350884' })
 
 // 1. Set this to the book name - using the book object
 const name = book.name
@@ -40,10 +44,6 @@ console.log(book.category)
 // Expected '0132350882' not to be defined.
 book.isbn.asin = undefined
 console.log(book.isbn.asin)
-
-// 2. Set this to the isbn 10 value - using the book object
-const isbn10 = book.isbn.isbn10
-console.log(isbn10)
 
 // Do not modify this basket object directly
 const basket = {
