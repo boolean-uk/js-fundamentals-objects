@@ -25,14 +25,7 @@ person.friends = []
 // 10. Add two objects to the persons friends array with the following properties:
 // Friend one: name - Chris, age - 46
 // Friend two: name - Dom, age - 43
-person.friends.push({
-  name: `Chris`,
-  age: 46
-},
-{
-  name: `Dom`,
-  age: 43
-})
+person.friends.push({name: `Chris`, age: 46}, {name: `Dom`, age: 43})
 
 // 11. Using an index on the persons friends array, set the bestFriend variable below
 // to the name of the first friend in the array
