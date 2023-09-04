@@ -3,18 +3,18 @@ const person = { age: 32, size: 'Small' }
 
 // 1. Give the person object a name property with the value Matt
 person.name = 'Matt'
-console.log(person.name)
+
 // 2. Remove the size property from the person
 delete person.size
 // 3. Increase the person's age by 11
-person.age += 11
+person.age = person.age + 11
 // 4. Add an instruments property to the person, initialised as an empty array
 person.instruments = []
 // 5. Add the following instruments to the persons instruments array: Guitar, Piano, Vocals
 person.instruments.push('Guitar', 'Piano', 'Vocals')
 // 6. Using an index on the instruments array, set the mainInstrument variable below
 // to the third instrument in the array
-const mainInstrument = person.intruments[2]
+const mainInstrument = person.instruments[2]
 
 // 7. Add a profession property to the person, which is an object
 person.profession = {}

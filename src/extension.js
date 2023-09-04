@@ -16,13 +16,13 @@ const book = {
 }
 
 /* eslint-disable no-unused-vars */
-//const isbn13 = '978-0132350884'
+// const isbn13 = '978-0132350884'
 
 // 1. Set this to the book name - using the book object
 const name = book.name
 
 // 2. Set this to the isbn 10 value - using the book object
-const isbn10 = book.isbn10
+const isbn10 = book.isbn.isbn10
 
 // Do not modify this basket object directly
 const basket = {
@@ -45,7 +45,7 @@ const basket = {
 const numberOfVoucherCodes = basket.voucherCodes.Length
 
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
-const firstVoucherCode = basket.items.name[0]
+const firstVoucherCode = basket.voucherCodes[0]
 
 // Do not edit this exported object
 module.exports = {
