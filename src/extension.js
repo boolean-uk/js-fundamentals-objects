@@ -23,7 +23,7 @@ const name = book.name
 
 // 2. Set this to the isbn 10 value - using the book object
 const isbn10 = book.isbn.isbn10
-git
+
 // Do not modify this basket object directly
 const basket = {
   items: [
@@ -46,8 +46,6 @@ const numberOfVoucherCodes = basket.voucherCodes.length
 
 // 4. Set this variable to the first element in the basket's voucher codes array - using the basket object
 const firstVoucherCode = basket.voucherCodes[0]
-
-
 // Do not edit this exported object
 module.exports = {
   name,
