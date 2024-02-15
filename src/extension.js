@@ -23,9 +23,10 @@ const newBook = {
   ...book,
   category: 'Programming',
   isbn: {
-    isbn10: book.isbn.isbn10,
+    ...book.isbn,
     isbn13: isbn13
-  }
+  },
+  pages: 464
 }
 delete newBook.isbn.asin
 delete newBook.dimensions
@@ -53,18 +54,31 @@ const basket = {
   voucherCodes: ['AA-AA-A', 'BB-BB-B']
 }
 
+// Create a new basket object with the modifications
+const newBasket = {
+  ...basket,
+  items: [
+    ...basket.items,
+    {
+      name: 'Oranges',
+      quantity: 4,
+      price: 0.75
+    }
+  ]
+}
+newBasket.items[0].price = 2
+
 // 3. Set this variable to the length of the baskets voucher codes array - using the basket object
-const numberOfVoucherCodes = basket.voucherCodes.length
+const numberOfVoucherCodes = newBasket.voucherCodes.length
 
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
-const firstVoucherCode = basket.voucherCodes[0]
+const firstVoucherCode = newBasket.voucherCodes[0]
 
-// Do not edit this exported object
 module.exports = {
   name,
   isbn10,
   book: newBook,
-  basket,
+  basket: newBasket,
   numberOfVoucherCodes,
   firstVoucherCode
 }
