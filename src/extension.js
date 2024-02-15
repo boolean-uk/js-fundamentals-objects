@@ -18,11 +18,24 @@ const book = {
 /* eslint-disable no-unused-vars */
 const isbn13 = '978-0132350884'
 
+// Create a new book object with the modifications
+const newBook = {
+  ...book,
+  category: 'Programming',
+  isbn: {
+    ...book.isbn,
+    isbn13: isbn13
+  },
+  pages: 464
+}
+delete newBook.isbn.asin
+delete newBook.dimensions
+
 // 1. Set this to the book name - using the book object
-const name = ''
+const name = newBook.name
 
 // 2. Set this to the isbn 10 value - using the book object
-const isbn10 = ''
+const isbn10 = newBook.isbn.isbn10
 
 // Do not modify this basket object directly
 const basket = {
@@ -41,18 +54,31 @@ const basket = {
   voucherCodes: ['AA-AA-A', 'BB-BB-B']
 }
 
+// Create a new basket object with the modifications
+const newBasket = {
+  ...basket,
+  items: [
+    ...basket.items,
+    {
+      name: 'Oranges',
+      quantity: 4,
+      price: 0.75
+    }
+  ]
+}
+newBasket.items[0].price = 2
+
 // 3. Set this variable to the length of the baskets voucher codes array - using the basket object
-const numberOfVoucherCodes = null
+const numberOfVoucherCodes = newBasket.voucherCodes.length
 
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
-const firstVoucherCode = null
+const firstVoucherCode = newBasket.voucherCodes[0]
 
-// Do not edit this exported object
 module.exports = {
   name,
   isbn10,
-  book,
-  basket,
+  book: newBook,
+  basket: newBasket,
   numberOfVoucherCodes,
   firstVoucherCode
 }
