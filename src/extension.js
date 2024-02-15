@@ -18,11 +18,23 @@ const book = {
 /* eslint-disable no-unused-vars */
 const isbn13 = '978-0132350884'
 
+// Create a new book object with the modifications
+const newBook = {
+  ...book,
+  category: 'Programming',
+  isbn: {
+    isbn10: book.isbn.isbn10,
+    isbn13: isbn13
+  }
+}
+delete newBook.isbn.asin
+delete newBook.dimensions
+
 // 1. Set this to the book name - using the book object
-const name = book.name
+const name = newBook.name
 
 // 2. Set this to the isbn 10 value - using the book object
-const isbn10 = book.isbn.isbn10
+const isbn10 = newBook.isbn.isbn10
 
 // Do not modify this basket object directly
 const basket = {
@@ -51,7 +63,7 @@ const firstVoucherCode = basket.voucherCodes[0]
 module.exports = {
   name,
   isbn10,
-  book,
+  book: newBook,
   basket,
   numberOfVoucherCodes,
   firstVoucherCode
