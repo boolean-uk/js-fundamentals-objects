@@ -27,6 +27,12 @@ book.pages = {}
 console.log(book)
 book.pages = 464
 console.log(book)
+bookook.ISBN13 = ''
+console.log(book)
+book.ISBN13 = '978-0132350884'
+console.log(book)
+delete book.asin
+console.log(book)
 // 2. Set this to the isbn 10 value - using the book object
 const isbn10 = book.isbn.isbn10
 console.log(isbn10)
@@ -56,6 +62,7 @@ const numberOfVoucherCodes = basket.voucherCodes.length
 console.log(numberOfVoucherCodes)
 basket.items[0].price = 2
 console.log(basket)
+
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
 const firstVoucherCode = basket.voucherCodes[0]
 console.log(firstVoucherCode)
