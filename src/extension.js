@@ -51,6 +51,14 @@ const numberOfVoucherCodes = basket.voucherCodes.length
 
 const firstVoucherCode = basket.voucherCodes[0]
 
+delete book.isbn.asin
+basket.items.push({name: 'Oranges', price: 0.75, quantity: 4})
+book.isbn.isbn13 = '978-0132350884'
+basket.items[0].price = 2
+book.category='Programming'
+delete book.dimensions
+book.pages = 464
+
 // Do not edit this exported object
 module.exports = {
   name,
