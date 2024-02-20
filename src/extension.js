@@ -41,10 +41,10 @@ const basket = {
   voucherCodes: ['AA-AA-A', 'BB-BB-B']
 }
 
-basket.items[1].price = 2
+basket.items[0].price = 2
 
 basket.items.push({
-  name:'Orange',
+  name:'Oranges',
   quantity:4,
   price:0.75
 })
