@@ -27,8 +27,8 @@ person.friends = []
 // 10. Add two objects to the persons friends array with the following properties:
 // Friend one: name - Chris, age - 46
 // Friend two: name - Dom, age - 43
-const person1 = {name: 'Chris', age: 46}
-const person2 = {name: 'Dom', age: 43}
+const person1 = { name: 'Chris', age: 46 }
+const person2 = { name: 'Dom', age: 43 }
 
 person.friends = [person1, person2]
 
