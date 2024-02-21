@@ -15,6 +15,12 @@ const book = {
   dimensions: '10x12x2'
 }
 
+book.category = 'Programming'
+book.pages = 464
+book.isbn.isbn13 = '978-0132350884'
+delete book.dimensions
+delete book.isbn.asin
+
 /* eslint-disable no-unused-vars */
 const isbn13 = '978-0132350884'
 
@@ -40,6 +46,10 @@ const basket = {
   ],
   voucherCodes: ['AA-AA-A', 'BB-BB-B']
 }
+basket.items[0].price = 2
+basket.items[2].name = 'Oranges'
+basket.items[2].price = 0.75
+basket.items[2].quantity = 4;
 
 // 3. Set this variable to the length of the baskets voucher codes array - using the basket object
 const numberOfVoucherCodes = basket.voucherCodes.length
