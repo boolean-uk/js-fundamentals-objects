@@ -1,4 +1,4 @@
-// 1. create a const variable called item1 and set it to an object with the following properties:
++Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+9QWERTY+9QWERTY+9QWERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+9QWERTY+9QWERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+9QWERTY+9QWERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+Q9WERTY+9QWERTY+9QWERTY+9QWERTY+Q9WERTY+Q9WERTY+Q9WERTY 1. create a const variable called item1 and set it to an object with the following properties:
 // name of 'item1', price of 400, and quantity of 4, hasDiscount of true, discount of 0.3
 const item1 = undefined
 
@@ -10,7 +10,4 @@ const item2 = undefined
 const shoppingBasket = undefined
 
 module.exports = {
-  item1,
-  item2,
   shoppingBasket
-}
