@@ -20,10 +20,15 @@ const item2 = {
 
 // 3. create a const variable called shoppingBasket and set it to an object with the following properties:
 // items - an array containing item1 and item2, and shopName called 'Sheepmart'
-const shoppingBasket = {items: [item1, item2], shopName: 'Sheepmart'}
+let shoppingBasket = {items: [item1, item2], shopName: 'Sheepmart'}
 
 module.exports = {
   item1,
   item2,
   shoppingBasket
+}
+let item = document.getElementById('item');
+
+function add(){
+  item = 0;
 }
