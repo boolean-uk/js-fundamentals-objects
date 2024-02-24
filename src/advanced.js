@@ -27,8 +27,3 @@ module.exports = {
   item2,
   shoppingBasket
 }
-let item = document.getElementById('item');
-
-function add(){
-  item = 0;
-}
