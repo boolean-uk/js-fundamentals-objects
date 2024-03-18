@@ -20,7 +20,7 @@ const item2 = {
 // 3. create a const variable called shoppingBasket and set it to an object with the following properties:
 // items - an array containing item1 and item2, and shopName called 'Sheepmart'
 const shoppingBasket = {
-  items: [{ name: 'item1' }, { name: 'item2' }],
+  items: [item1, item2],
   shopName: 'Sheepmart'
 }
 
