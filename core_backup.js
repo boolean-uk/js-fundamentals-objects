@@ -1,7 +1,7 @@
 // 1. create a const variable called item1 and set it to an object with the following properties:
 // name of 'item1', price of 400, and quantity of 4, hasDiscount of true, discount of 0.3
 const item1 = {
-  name: 'item1',
+  name: 'item 1',
   price: 400,
   quantity: 4,
   hasDiscount: true,
@@ -17,14 +17,13 @@ const item2 = {
   hasDiscount: false,
   discount: 0.0
 }
-
 // 3. create a const variable called shoppingBasket and set it to an object with the following properties:
 // items - an array containing item1 and item2, and shopName called 'Sheepmart'
 const shoppingBasket = {
-  items: [item1, item2],
+  items: [...item1, ...item2],
   shopName: 'Sheepmart'
 }
-console.log(shoppingBasket)
+
 module.exports = {
   item1,
   item2,
