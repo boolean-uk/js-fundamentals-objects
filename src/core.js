@@ -43,7 +43,7 @@ person.friends = [
 // 11. Using an index on the persons friends array, set the bestFriend variable below
 // to the name of the first friend in the array
 const bestFriend = person.friends[0].name
-console.log(bestFriend)
+console.log('Best friend is:', bestFriend)
 
 // Don't change the code below this line
 module.exports = {
