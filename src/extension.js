@@ -53,11 +53,12 @@ book.category = 'Programming'
 book.pages = 464
 
 book.isbn.isbn10 = isbn13
+
 delete book.dimensions
 delete book.isbn.asin
 
 // Do not edit this exported object
-export default {
+module.exports = {
   name,
   isbn10,
   book,
